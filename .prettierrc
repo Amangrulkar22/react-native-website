@@ -1,36 +1,35 @@
 {
   "overrides": [
     {
-      "files": ".prettierrc",
-      "options": {
-        "parser": "json"
-      }
-    },
-    {
-      "files": ["website/core/**/*.js", "website/static/js/**/*.js"],
+      "files": "*.js",
       "options": {
         "arrowParens": "avoid",
         "bracketSpacing": false,
         "jsxBracketSameLine": true,
         "printWidth": 80,
         "singleQuote": true,
-        "trailingComma": "es5"
+        "trailingComma": "es5",
+        "endOfLine": "auto"
       }
     },
     {
-      "files": [
-        "docs/**/*.md",
-        "website/versioned_docs/**/*.md",
-        "website/blog/**/*.md"
-      ],
+      "files": "*.md",
       "options": {
         "arrowParens": "always",
-        "bracketSpacing": false,
+        "bracketSpacing": true,
         "jsxBracketSameLine": true,
-        "printWidth": 80,
-        "proseWrap": "never",
+        "printWidth": 66,
+        "proseWrap": "preserve",
         "singleQuote": true,
-        "trailingComma": "es5"
+        "trailingComma": "none",
+        "endOfLine": "auto"
+      }
+    },
+    {
+      "files": ["*.scss", "*.css"],
+      "options": {
+        "printWidth": 80,
+        "endOfLine": "auto"
       }
     }
   ]
